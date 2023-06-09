@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제1</title>
+</head>
+
+<body>
+    <main>
+        <form method="post">
+            <label for="name">고객명 :</label>
+            <input type="text" name="name" id="name">
+            <p>
+                <label for="phone_num">전화번호 :</label>
+                <input type="tel" name="phone_num" id="tel">
+            </p>
+            <p>
+                <label for="Email">E-mail</label>
+                <input type="email" name="Email" id="e-mail">
+            </p>
+            <p>
+                <label for="pizza_choice">피자선택</label>
+                <select name="pizza_choice" id="pizza">
+                    <option value="default">피자를 선택하세요</option>
+                    <option value="1">페퍼로니피자 </option>
+                    <option value="2">하와이안피자</option>
+                </select>
+            </p>
+            <fieldset> <!-- 필드 상자를만듬 -->
+                <legend>피자 사이즈</legend> <!-- 선 안에 글넣음 -->
+                <input type="radio" name="size" value="S">Small<br><br>
+                <input type="radio" name="size" value="M">Medium<br><br>
+                <input type="radio" name="size" value="L">Large<br><br>
+
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <input type="checkbox" name="topping" value="bacon">베이컨 <br>
+                <input type="checkbox" name="topping" value="cheese">치즈 <br>
+                <input type="checkbox" name="topping" value="onion">양파 <br>
+                <input type="checkbox" name="topping" value="mushroom">버섯 <br>
+            </fieldset>
+            <p>
+            <label for="want_time">희망배송시간 :</label>
+            <input type="time" name="want_time" id="want_time"><br><br>
+            <label for="want">배송시 요청사항 :</label>
+            <textarea name="want" id="want" rows="3"></textarea>
+        </p>
+        </form>
+    </main>
+
+</body>
+
+</html>

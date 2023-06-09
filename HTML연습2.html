@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML연습2</title>
+</head>
+
+<body>
+    <form for="action">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <label for="name">1.납품자명 :</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">2.email :</label>
+            <input type="email" name="email" id="email" placeholder="answer@naver.com" required><br><br>
+            <label for="home_page">3.홈페이지 :</label>
+            <input type="text" name="home_page" id="home_page" value="http://"><br><br>
+            <label for="region">4.지역 :</label>
+            <select name="region" id="region">
+                <option value="pusan">부산</option>
+                <option value="soeul">서울</option>
+                <option value="deagu">대구</option>
+                </select><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+           <li><label for="goods_name">상품명 :</label>
+           <input type="text" name="goods_name" id="goods_name"></li> <br>
+           <li><label for="amount">납품수량 :</label> 
+        <input type="text" name="amount" id="amount" placeholder="최소 100"></li> <br>
+        <li><label for="grade">납품등급 :</label>
+        <input type="range" name="grade" id="grade"></li> <br>
+        <li><label for="another">기타사항 :</label>
+        <textarea name="another" id="another" cols="20" rows="5"></textarea></li> <br>
+        </ul>
+        </fieldset>
+        <br>
+        <button >send message</button>
+    </form>
+
+</body>
+
+</html>
